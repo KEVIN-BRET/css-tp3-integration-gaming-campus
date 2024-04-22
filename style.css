@@ -4,7 +4,7 @@
   --color1: #f1f1f1;
   --color2: #5f04aa;
   --color3: #e0e0e0;
-  --color4: ;
+  --color4: #000000;
 }
 
 * {
@@ -17,7 +17,6 @@
 }
 
 body {
-  background: url(./assets/img/bg.jpg) no-repeat center/cover;
   height: 100vh;
   /* max-width: 1440px; */
   font-family: "Montserrat", sans-serif;
@@ -28,7 +27,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 65px;
   margin: 0 auto;
 }
 
@@ -50,7 +49,7 @@ nav ul li {
   height: 100%;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   border-top: 5px solid transparent;
   transition: all 0.3s ease;
 }
@@ -66,4 +65,51 @@ nav ul li:hover {
     padding: 10px 20px;
     border-radius: 50px;
     border: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./assets/img/bg.jpg) no-repeat center/cover;
+
+}
+
+header .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px auto;
+    gap: 30px;
+}
+
+header .main-header h1 {
+    color: var(--color1);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+header .main-header button {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--color1);
+    color: var(--color1);
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+header .main-header button:hover {
+    color: var(--color4);
+    background: var(--color1);
+}
+
+
+.header-text {
+    background: var(--color1);
+    height: 100px;
 }
