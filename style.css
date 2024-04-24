@@ -101,27 +101,30 @@ nav li:last-child::before {
   padding: 10px 20px;
 }
 
-header {
+/* header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./assets/img/bg.jpg) no-repeat center/cover;
   background-attachment: fixed;
-}
+} */
 
 header .main-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 60px auto;
-  gap: 30px;
+  background: url(./assets/img/bg.jpg) fixed center/cover;
+  color: var(--color1);
+  padding: 60px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* margin: 60px auto; */
+  /* gap: 30px; */
 }
 
 header .main-header h1 {
-  color: var(--color1);
+  /* color: var(--color1); */
+  /* font-size: 24px; */
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: 500;
+  margin: 30px 0 35px;
 }
 
 header .main-header button {
@@ -131,64 +134,57 @@ header .main-header button {
   /* font-size: 16px; */
 }
 
-.header-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 55px 30px;
+header .main-header i {
+  transform: translateX(5px);
 }
 
-.header-text p {
-  max-width: 1200px;
-  font-weight: 600;
-  font-size: 18px;
-  text-align: center;
+.header-text {
+  padding: 45px 0;
+  max-width: 1100px;
+  font-size: 1.2rem;
+  line-height: 34px;
+  margin: 0 auto;
 }
 
 .icon-part {
   background: var(--color5);
-  margin: 0 auto;
+  color: var(--color1);
+  padding: 65px 0;
 }
 
 .icon-part .icon-part-container {
-  width: 100%;
-  padding: 90px 30px;
+  max-width: 1100px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 80px;
-}
-
-.list-icon-part {
-  min-width: 260px;
-  max-width: 350px;
-  text-align: center;
-
-  color: var(--color1);
-  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  margin: 0 auto;
+  /* flex-wrap: wrap; */
 }
 
 .list-icon-part .lip-logo {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .list-icon-part h3 {
   text-transform: uppercase;
-  margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .list-icon-part p {
-  /* text-transform: uppercase; */
-  margin-bottom: 30px;
+  width: 80%;
+  margin: 10px auto 20px;
 }
 
 .list-icon-part button {
-  padding: 10px 25px;
-  /* letter-spacing: 2px; */
-  /* font-weight: 400; */
-  /* font-size: 14px; */
+  padding: 10px 32px;
 }
+
+
+
+
+
+
+
 
 .news-part {
   display: flex;
