@@ -1,3 +1,5 @@
+/* ***** RESET ***** */
+
 @font-face {
   font-family: "Montserra";
   src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
@@ -40,6 +42,8 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
+/* ***** NAV ***** */
 
 nav {
   max-width: 1100px;
@@ -101,12 +105,7 @@ nav li:last-child::before {
   padding: 10px 20px;
 }
 
-/* header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-attachment: fixed;
-} */
+/* ***** HEADER ***** */
 
 header .main-header {
   background: url(./assets/img/bg.jpg) fixed center/cover;
@@ -146,6 +145,8 @@ header .main-header i {
   margin: 0 auto;
 }
 
+/* ***** ICON-PART ***** */
+
 .icon-part {
   background: var(--color5);
   color: var(--color1);
@@ -178,6 +179,8 @@ header .main-header i {
 .list-icon-part button {
   padding: 10px 32px;
 }
+
+/* ***** NEWS-PART ***** */
 
 .news-part {
   background: var(--color6);
@@ -283,6 +286,8 @@ header .main-header i {
   transform: translateX(5px);
 }
 
+/* ***** CONTACT ***** */
+
 .contact {
   padding: 65px 0 20px;
   max-width: 1100px;
@@ -384,6 +389,8 @@ header .main-header i {
   width: 60px;
 }
 
+/* ***** FOOTER ***** */
+
 footer {
   background: var(--color5);
   color: var(--color1);
@@ -404,3 +411,70 @@ footer ul {
 }
 
 /* ***** MEDIA QUERIES ***** */
+
+@media screen and (max-width: 1000px) {
+  nav li {
+    font-size: 0.7rem;
+  }
+  .main-header img {
+    width: 60%;
+  }
+  .contact-list .li {
+    padding-left: 15px;
+  }
+  .medias-logos img {
+    width: 40px;
+  }
+  footer ul {
+    flex-wrap: wrap;
+  }
+  footer li {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav li {
+    display: none;
+  }
+  .icon-part .icon-part-container {
+    display: block;
+  }
+  .icon-part {
+    padding: 0 0 30px;
+  }
+  .list-icon-part {
+    margin-top: 40px;
+  }
+  .contact {
+    display: none;
+  }
+  .news-part .header-news {
+    display: block;
+  }
+  .left-part {
+    width: 100%;
+  }
+  .news-part .header-news .left-part h2 {
+    text-align: center;
+  }
+  .news-part .header-news .left-part p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .left-part h2 {
+    text-align: center;
+  }
+  .news-part .main-news .main-news-container {
+    display: block;
+  }
+  .news-part .main-news .main-news-container > div {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    padding-top: 58px;
+  }
+  .main-news-container img {
+    max-width: 50%;
+  }
+}
