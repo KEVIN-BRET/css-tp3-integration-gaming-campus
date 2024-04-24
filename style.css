@@ -3,7 +3,7 @@
   src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 :root {
-  --color1: #ffffff;
+  --color1: whitesmoke;
   --color2: #5f04aa;
   --color3: #e0e0e0;
   --color4: #000000;
@@ -18,8 +18,23 @@
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   list-style: none;
-  outline: none;
 }
+
+button {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: 1px solid var(--color1);
+    color: var(--color1);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    color: var(--color4);
+    background: var(--color1);
+  }
 
 body {
   height: 100vh;
@@ -95,21 +110,10 @@ header .main-header h1 {
 }
 
 header .main-header button {
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid var(--color1);
-  color: var(--color1);
   padding: 15px 30px;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-
-header .main-header button:hover {
-  color: var(--color4);
-  background: var(--color1);
+  /* font-weight: 400; */
+  /* font-size: 16px; */
 }
 
 .header-text {
@@ -165,21 +169,10 @@ header .main-header button:hover {
 }
 
 .list-icon-part button {
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid var(--color1);
-  color: var(--color1);
   padding: 10px 25px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-
-.list-icon-part button:hover {
-  color: var(--color4);
-  background: var(--color1);
+  /* letter-spacing: 2px; */
+  /* font-weight: 400; */
+  /* font-size: 14px; */
 }
 
 .news-part {
@@ -214,16 +207,12 @@ header .main-header button:hover {
 }
 
 .news-part .header-news .right-part button {
-  cursor: pointer;
-  background: transparent;
   border: 1px solid var(--color4);
   color: var(--color4);
   padding: 10px 25px;
   letter-spacing: 2px;
-  text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
-  transition: all 0.3s ease;
 }
 
 .news-part .header-news .right-part button:hover {
