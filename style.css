@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
+@font-face {
+  font-family: "Montserra";
+  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
 :root {
   --color1: #ffffff;
   --color2: #5f04aa;
   --color3: #e0e0e0;
   --color4: #000000;
   --color5: #151515;
+  --color6: #f7f7f7;
 }
 
 * {
@@ -13,14 +16,14 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  outline: none;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
+  outline: none;
 }
 
 body {
   height: 100vh;
   /* max-width: 1440px; */
-  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -177,4 +180,83 @@ header .main-header button:hover {
 .list-icon-part button:hover {
   color: var(--color4);
   background: var(--color1);
+}
+
+.news-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 100px 30px;
+  background: var(--color6);
+}
+
+.news-part .header-news {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+}
+
+.news-part .header-news .left-part h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+.news-part .header-news .left-part p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.news-part .header-news .right-part button {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--color4);
+  color: var(--color4);
+  padding: 10px 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.news-part .header-news .right-part button:hover {
+  color: var(--color1);
+  background: var(--color4);
+}
+
+.news-part .main-news {
+}
+
+.news-part .main-news .main-news-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news-part .main-news .main-news-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  padding: 10px;
+}
+
+.news-part .main-news .main-news-container div .mn-pic {
+  margin-bottom: 10px;
+}
+
+.news-part .main-news .main-news-container div .mn-pic img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px #000000;
 }
